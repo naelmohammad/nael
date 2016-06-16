@@ -9,11 +9,11 @@ FROM ubuntu:latest
 MAINTAINER Nael Mohammad
 
 # Local directory with project source
-ENV DOCKYARD_SRC=hell_django
+ENV DOCKYARD_SRC=django
 # Directory in container for all proejct files to make modifications.
 ENV DOCKYARD_SRVHOME=/srv
 # Directory for project source files.
-ENV DOCKYARD_SRVPROJ=/srv/hello_django
+ENV DOCKYARD_SRVPROJ=/srv/django
 
 # Update default repository and packages
 RUN apt-get update && apt-get -y upgrade
